@@ -926,4 +926,213 @@ $(function(){
         </div>
     </div>
 </div>
+<script type="text/javascript" src="https://s3.amazonaws.com/js.roblox.com/507606ba77acf2ff29dd3ec7cb668f06.js"></script>
+
+    <div id="videoPrerollPanel" style="display:none">
+        <div id="videoPrerollTitleDiv">
+            Gameplay sponsored by:
+        </div>
+        <div id="videoPrerollMainDiv"></div>
+        <div id="videoPrerollCompanionAd"></div>
+        <div id="videoPrerollLoadingDiv">
+            Loading <span id="videoPrerollLoadingPercent">0%</span> - <span id="videoPrerollMadStatus" class="MadStatusField">Starting game...</span><span id="videoPrerollMadStatusBackBuffer" class="MadStatusBackBuffer"></span>
+            <div id="videoPrerollLoadingBar">
+                <div id="videoPrerollLoadingBarCompleted">
+                </div>
+            </div>
+        </div>
+        <div id="videoPrerollJoinBC">
+            <span>Get more with Builders Club!</span>
+            <a href="/Upgrades/BuildersClubMemberships.aspx?ref=vpr" target="_blank" id="videoPrerollJoinBCButton"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        Roblox.VideoPreRoll.showVideoPreRoll = false;
+        Roblox.VideoPreRoll.loadingBarMaxTime = 30000;
+        Roblox.VideoPreRoll.videoOptions.key = "robloxcorporation";
+        Roblox.VideoPreRoll.videoOptions.categories = "NonBC,IsLoggedIn,AgeUnknown,GenderUnknown";
+             Roblox.VideoPreRoll.videoOptions.id = "games";
+        Roblox.VideoPreRoll.videoLoadingTimeout = 11000;
+        Roblox.VideoPreRoll.videoPlayingTimeout = 23000;
+        Roblox.VideoPreRoll.videoLogNote = "NotWindows";
+        Roblox.VideoPreRoll.logsEnabled = true;
+        Roblox.VideoPreRoll.excludedPlaceIds = "32373412";
+            
+                Roblox.VideoPreRoll.specificAdOnPlacePageEnabled = true;
+                Roblox.VideoPreRoll.specificAdOnPlacePageId = 145076978;
+                Roblox.VideoPreRoll.specificAdOnPlacePageCategory = "stooges";
+            
+            
+                Roblox.VideoPreRoll.specificAdOnPlacePage2Enabled = true;
+                Roblox.VideoPreRoll.specificAdOnPlacePage2Id = 122911678;
+                Roblox.VideoPreRoll.specificAdOnPlacePage2Category = "lego";
+            
+        $(Roblox.VideoPreRoll.checkEligibility);
+    </script>
+
+<div id="GuestModePrompt_BoyGirl" class="Revised GuestModePromptModal" style="display:none;">
+    <div class="simplemodal-close">
+        <a class="ImageButton closeBtnCircle_20h" style="cursor: pointer; margin-left:455px;top:7px; position:absolute;"></a>
+    </div>
+    <div class="Title">
+        Choose Your Character
+    </div>
+    <div style="min-height: 275px; background-color: white;">
+        <div style="clear:both; height:25px;"></div>
+
+        <div style="text-align: center;">
+            <div class="VisitButtonsGuestCharacter VisitButtonBoyGuest" style="float:left; margin-left:45px;"></div>
+            <div class="VisitButtonsGuestCharacter VisitButtonGirlGuest" style="float:right; margin-right:45px;"></div>
+        </div>
+        <div style="clear:both; height:25px;"></div>
+        <div class="RevisedFooter">
+            <div style="width:200px;margin:10px auto 0 auto;">
+                <a href="#" onclick="redirectPlaceLauncherToRegister(); return false;"><div class="RevisedCharacterSelectSignup"></div></a>
+                <a class="HaveAccount" href="#" onclick="redirectPlaceLauncherToLogin();return false;">I have an account</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function checkRobloxInstall() {
+                 window.location= '/install/unsupported.aspx'; return false;
+    }
+        if (typeof MadStatus === "undefined") {
+            MadStatus = {};
+        }
+
+        MadStatus.Resources = {
+            //<sl:translate>
+            accelerating: "Accelerating",
+			aggregating: "Aggregating",
+			allocating: "Allocating",
+            acquiring: "Acquiring",
+			automating: "Automating",
+			backtracing: "Backtracing",
+			bloxxing: "Bloxxing",
+			bootstrapping: "Bootstrapping",
+			calibrating: "Calibrating",
+			correlating: "Correlating",
+			denoobing: "De-noobing",
+			deionizing: "De-ionizing",
+			deriving: "Deriving",
+            energizing: "Energizing",
+			filtering: "Filtering",
+			generating: "Generating",
+			indexing: "Indexing",
+			loading: "Loading",
+			noobing: "Noobing",
+			optimizing: "Optimizing",
+			oxidizing: "Oxidizing",
+			queueing: "Queueing",
+			parsing: "Parsing",
+			processing: "Processing",
+			rasterizing: "Rasterizing",
+			reading: "Reading",
+			registering: "Registering",
+			rerouting: "Re-routing",
+			resolving: "Resolving",
+			sampling: "Sampling",
+			updating: "Updating",
+			writing: "Writing",
+            blox: "Blox",
+			countzero: "Count Zero",
+			cylon: "Cylon",
+			data: "Data",
+			ectoplasm: "Ectoplasm",
+			encryption: "Encryption",
+			event: "Event",
+			farnsworth: "Farnsworth",
+			bebop: "Bebop",
+			fluxcapacitor: "Flux Capacitor",
+			fusion: "Fusion",
+			game: "Game",
+			gibson: "Gibson",
+			host: "Host",
+			mainframe: "Mainframe",
+			metaverse: "Metaverse",
+			nerfherder: "Nerf Herder",
+			neutron: "Neutron",
+			noob: "Noob",
+			photon: "Photon",
+			profile: "Profile",
+			script: "Script",
+			skynet: "Skynet",
+			tardis: "TARDIS",
+			virtual: "Virtual",
+            analogs: "Analogs",
+			blocks: "Blocks",
+			cannon: "Cannon",
+			channels: "Channels",
+			core: "Core",
+			database: "Database",
+			dimensions: "Dimensions",
+			directives: "Directives",
+			engine: "Engine",
+			files: "Files",
+			gear: "Gear",
+			index: "Index",
+			layer: "Layer",
+			matrix: "Matrix",
+			paradox: "Paradox",
+			parameters: "Parameters",
+			parsecs: "Parsecs",
+			pipeline: "Pipeline",
+			players: "Players",
+			ports: "Ports",
+			protocols: "Protocols",
+			reactors: "Reactors",
+			sphere: "Sphere",
+			spooler: "Spooler",
+			stream: "Stream",
+			switches: "Switches",
+			table: "Table",
+			targets: "Targets",
+			throttle: "Throttle",
+			tokens: "Tokens",
+			torpedoes: "Torpedoes",
+			tubes: "Tubes"
+            //</sl:translate>
+        };
+</script>
+
+<script type="text/javascript">
+    var Roblox = Roblox || {};
+    Roblox.UpsellAdModal = Roblox.UpsellAdModal || {};
+
+    Roblox.UpsellAdModal.Resources = {
+        //<sl:translate>
+        title: "Remove Ads Like This",
+        body: "Builders Club members do not see external ads like these.",
+        accept: "Upgrade Now",
+        decline: "No, thanks"
+        //</sl:translate>
+    };
+</script>  
+
+<div class="ConfirmationModal modalPopup unifiedModal smallModal" data-modal-handle="confirmation" style="display:none;">
+    <a class="genericmodal-close ImageButton closeBtnCircle_20h"></a>
+    <div class="Title"></div>
+    <div class="GenericModalBody">
+        <div class="TopBody">
+            <div class="ImageContainer roblox-item-image" data-image-size="small" data-no-overlays="" data-no-click="">
+                <img class="GenericModalImage" alt="generic image">
+            </div>
+            <div class="Message"></div>
+        </div>
+        <div class="ConfirmationModalButtonContainer">
+            <a href="" roblox-confirm-btn=""><span></span></a>
+            <a href="" roblox-decline-btn=""><span></span></a>
+        </div>
+        <div class="ConfirmationModalFooter">
+        
+        </div>  
+    </div>   
+    <script type="text/javascript">
+        //<sl:translate>
+        Roblox.GenericConfirmation.Resources = { yes: "Yes", No: "No" }
+        //</sl:translate>
+    </script>
+</div>
+
 
